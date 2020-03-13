@@ -16,19 +16,19 @@ export const chartData = [
   {
   name: 'Clean Tech',
   data: generateData(12,30,.25),
-  color: '#002430'
+  color: '#1a53ff'
 }, {
   name: 'Conventional Energy',
   data: generateData(12,10,0.2),
-  color: '#004760'
+  color: '#4d79ff'
 }, {
   name: 'Operational Improvement',
   data: generateData(12,6,.3),
-  color: '#006A90'
+  color: '#809fff'
 }, {
   name: 'Other',
   data: generateData(12,5,.5),
-  color: '#178CB6'
+  color: '#b3c6ff'
 }
 ];
 
