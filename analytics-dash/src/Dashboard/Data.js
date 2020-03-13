@@ -1,5 +1,3 @@
-
-
 function generateData(count,start, growth){
   // create an empty array
   const data = [];
@@ -16,19 +14,19 @@ function generateData(count,start, growth){
 
 export const chartData = [
   {
-  name: 'Phones',
-  data: generateData(12,30,5),
+  name: 'Clean Tech',
+  data: generateData(12,30,.25),
   color: '#002430'
 }, {
-  name: 'Services',
+  name: 'Conventional Energy',
   data: generateData(12,10,0.2),
   color: '#004760'
 }, {
-  name: 'Laptops',
+  name: 'Operational Improvement',
   data: generateData(12,6,.3),
   color: '#006A90'
 }, {
-  name: 'Tablets',
+  name: 'Other',
   data: generateData(12,5,.5),
   color: '#178CB6'
 }
@@ -55,10 +53,10 @@ function format(num) {
 
 export const tableRows = months.map((month, i ) => ({
   month,
-  phones: format(chartData[0].data[i]),
-  services: format(chartData[1].data[i]),
-  laptops: format(chartData[2].data[i]),
-  tablets: format(chartData[3].data[i]),
+  cleanTech: format(chartData[0].data[i]),
+  conventionalEnergy: format(chartData[1].data[i]),
+  operationalImprovement: format(chartData[2].data[i]),
+  other: format(chartData[3].data[i]),
 }))
 
 export const tableColumns = [
@@ -69,26 +67,26 @@ export const tableColumns = [
   },
   {
     width: 240,
-    label: 'Phones',
-    dataKey: 'phones',
+    label: 'Clean Tech',
+    dataKey: 'cleanTech',
     numeric: true
   },
   {
     width: 240,
-    label: 'Services',
-    dataKey: 'services',
+    label: 'Conventional Energy',
+    dataKey: 'conventionalEnergy',
     numeric: true
   },
   {
     width: 240,
-    label: 'Laptops',
-    dataKey: 'laptops',
+    label: 'Operational Improvement',
+    dataKey: 'operationalImprovement',
     numeric: true
   },
   {
     width: 240,
-    label: 'Tablets',
-    dataKey: 'tablets',
+    label: 'Other',
+    dataKey: 'other',
     numeric: true
   }
 ]

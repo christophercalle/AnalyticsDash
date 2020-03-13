@@ -11,7 +11,7 @@ const ROW_HEIGHT = 48;
 const TableCell = styled.div`
   display: flex;
   color: black;
-  ${({align}) => align === 'right' && 'flex-direction: row-reverse'}
+  padding-left: 8%;
 `
 
 class ReactVirtualizedTable extends React.Component{

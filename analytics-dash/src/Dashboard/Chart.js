@@ -1,6 +1,5 @@
 import React from 'react';
 import {Card} from './Card';
-
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import {chartData} from './Data';
@@ -14,7 +13,7 @@ const options = {
       }
   },
   title: {
-      text: 'Revenue by Product'
+      text: 'Oil & Gas financings by Expenditures / Investment Types'
   },
   xAxis: {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun', 'Jul', 'Aug', 'Sep','Oct', 'Nov', 'Dec']
@@ -23,7 +22,7 @@ const options = {
       min: 0,
       reversedStacks: false,
       title: {
-          text: 'Billions of Dollars'
+          text: 'Expenditure ($ Billions of Dollars)'
       }
   },
   tooltip: {

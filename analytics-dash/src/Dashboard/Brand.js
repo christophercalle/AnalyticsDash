@@ -2,6 +2,6 @@ import React from 'react';
 
 export function Brand() {
   return (
-    <h1>Business Corp</h1>
+    <h1>O&G Analytics</h1>
   )
 }
